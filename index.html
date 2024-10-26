@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/2899445.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <div class="container mt-3 bg  mb-3 py-2 rounded rounded-2">
+            <h1>Bookmark</h1>
+            <div class="w-100 text-center m-3">...............................................................................................................................................................................................................</div>
+            <h2 class="text-center">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark icon-left"></i>
+            <i class="fa-solid fa-bookmark icon-right"></i>
+
+            <div class="mt-4">
+                <i class="fa-solid fa-book-bookmark"></i> <label for="siteName">Site Name</label>
+                <input type="text" class="form-control" placeholder="Bookmark Name" id="siteName">
+            </div>
+
+            <div class="mt-4">
+                <i class="fa-solid fa-link"></i> <label for="siteURL">Site URL</label>
+                <input type="text" class="form-control mb-5 " placeholder="Wedsite URL" id="siteURL">
+            </div>
+
+            <button onclick="addBookmark();" class="btn btn-success w-25">Submit</button>
+
+            <table class="table table-dark table-striped  mt-5 text-center border-3 shadow">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table-Body">
+                </tbody>
+                </table>
+        </div>
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

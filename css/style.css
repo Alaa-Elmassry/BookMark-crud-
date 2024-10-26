@@ -1,0 +1,62 @@
+::selection{
+    background: #fec260;
+}
+body{
+    background-color: #FFEFE8;
+}
+
+label{
+    font-weight: bold;
+    color: #212529;
+}
+
+h1{
+    font-size: 70px;
+    font-family: 'Cookie', cursive;
+    color: #352e28;
+    text-align: center;
+    position: relative;
+}
+h1::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    left: 0;
+    bottom: 15px;
+    left: 40%;
+    background-color: #fec260;
+    z-index: -1;
+}
+h2{
+    font-family: "Righteous", cursive;
+    font-size: 22px;
+    text-align: center;
+    color: #198754;
+    position: relative;
+}
+
+.icon-left{
+    position: absolute;
+    top: 27.5%;
+    right: 62%;
+    z-index: 999;
+    font-size: 25px;
+    color: #198754;
+}
+.icon-right{
+    position: absolute;
+    top: 27.5%;
+    left: 62%;
+    font-size: 25px;
+    color: #198754;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+}
